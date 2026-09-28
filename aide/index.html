@@ -37,14 +37,24 @@
   img.rond { width: 34px; height: 34px; vertical-align: middle; margin-right: 6px; border-radius: 50%; box-shadow: 0 1px 4px rgba(0,0,0,.18); }
   img.large { width: 280px; max-width: 100%; display: block; margin: 4px 0 8px; border-radius: 12px; }
   .haut { position: fixed; right: 16px; bottom: 16px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 22px; padding: 10px 16px; font-size: 14px; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+  figure img { cursor: zoom-in; }
+  #zoom { position: fixed; inset: 0; background: rgba(11,21,38,.88); display: none; align-items: center; justify-content: center; z-index: 10; cursor: zoom-out; padding: 16px; }
+  #zoom.ouvert { display: flex; }
+  #zoom img { max-width: 100%; max-height: 100%; border-radius: 18px; }
   footer { color: var(--doux); font-size: 13px; margin-top: 40px; }
   @media (max-width: 720px) {
-    body { font-size: 16px; }
+    body { font-size: 15px; padding: 24px 12px 80px; }
     h1 { font-size: 34px; }
     nav ol { columns: 1; }
-    .bloc { flex-direction: column; gap: 12px; }
-    .bloc.un figure, .bloc.deux figure { width: 100%; }
-    .bloc.un img.tel { width: 62%; }
+    .bloc { gap: 12px; margin: 14px 0 20px; }
+    .bloc.un figure { width: 40%; }
+    .bloc.deux figure { width: 40%; flex-direction: column; flex-wrap: nowrap; align-items: center; }
+    img.tel, .bloc.un img.tel { width: 100%; max-width: 100%; border-radius: 14px; }
+    img.montre { width: 100%; max-width: 100%; border-radius: 22px; }
+    figcaption { font-size: 11.5px; line-height: 1.3; }
+    .texte p, .texte li { font-size: 14.5px; line-height: 1.45; }
+    img.rond { width: 28px; height: 28px; }
+    img.large { width: 100%; }
   }
 </style>
 </head>
@@ -220,5 +230,12 @@
   <footer>Egeria · notice du 28 septembre 2026 · <a href="../confidentialite.html">Politique de confidentialité</a></footer>
 </main>
 <a class="haut" href="#haut">↑ Sommaire</a>
+<div id="zoom"><img alt=""></div>
+<script>
+  // toucher une capture l'affiche en grand, toucher encore la referme
+  const z = document.getElementById('zoom'), zi = z.querySelector('img');
+  document.querySelectorAll('figure img').forEach(i => i.addEventListener('click', () => { zi.src = i.src; z.classList.add('ouvert'); }));
+  z.addEventListener('click', () => z.classList.remove('ouvert'));
+</script>
 </body>
 </html>
