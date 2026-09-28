@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Egeria · Notice</title>
+<style>
+  :root { --fond:#F5F1EA; --texte:#0B1526; --doux:#6B6F78; --accent:#0E86BD; --carte:#FFFFFF; --trait:#DDD6CB; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+  body { font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; background: var(--fond); color: var(--texte); margin: 0; padding: 32px 16px 80px; line-height: 1.55; font-size: 16px; }
+  main { max-width: 860px; margin: 0 auto; }
+  h1 { font-family: Georgia, serif; font-style: italic; font-weight: normal; font-size: 40px; margin: 0; color: var(--accent); }
+  .sous { color: var(--doux); margin: 2px 0 24px; }
+  nav { background: var(--carte); border-radius: 14px; padding: 16px 20px; margin-bottom: 8px; }
+  nav strong { display:block; margin-bottom: 6px; }
+  nav ol { margin: 0; padding-left: 0; list-style: none; columns: 2; column-gap: 24px; }
+  nav li { padding: 4px 0; break-inside: avoid; }
+  nav a { color: var(--accent); text-decoration: none; }
+  section { padding-top: 8px; }
+  h2 { font-size: 23px; margin: 36px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--trait); }
+  h3 { font-size: 18px; margin: 26px 0 10px; }
+  p { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  li { margin-bottom: 4px; }
+  a { color: var(--accent); }
+  .bloc { display: flex; gap: 24px; align-items: flex-start; margin: 18px 0 26px; }
+  figure { margin: 0; flex: none; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .bloc.un figure { width: 230px; }
+  .bloc.deux figure { width: 400px; }
+  figcaption { width: 100%; text-align: center; color: var(--doux); font-size: 13px; }
+  img.tel { width: 190px; max-width: calc(50% - 5px); height: auto; border-radius: 22px; border: 1px solid var(--trait); background: #fff; }
+  .bloc.un img.tel { width: 230px; max-width: 100%; }
+  img.montre { width: 170px; max-width: calc(50% - 5px); border-radius: 34px; }
+  .texte { flex: 1; min-width: 0; }
+  img.rond { width: 34px; height: 34px; vertical-align: middle; margin-right: 6px; border-radius: 50%; box-shadow: 0 1px 4px rgba(0,0,0,.18); }
+  img.large { width: 280px; max-width: 100%; display: block; margin: 4px 0 8px; border-radius: 12px; }
+  .haut { position: fixed; right: 16px; bottom: 16px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 22px; padding: 10px 16px; font-size: 14px; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+  footer { color: var(--doux); font-size: 13px; margin-top: 40px; }
+  @media (max-width: 720px) {
+    body { font-size: 16px; }
+    h1 { font-size: 34px; }
+    nav ol { columns: 1; }
+    .bloc { flex-direction: column; gap: 12px; }
+    .bloc.un figure, .bloc.deux figure { width: 100%; }
+    .bloc.un img.tel { width: 62%; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="haut">Egeria</h1>
+  <p class="sous">Notice d'utilisation</p>
+  <nav><strong>Sommaire</strong><ol><li><a href="#1-pourquoi-egeria">1. Pourquoi Egeria</a></li><li><a href="#2-comment-ca-marche">2. Comment ça marche</a></li><li><a href="#3-la-carte-et-les-ombres">3. La carte et les ombres</a></li><li><a href="#4-choisir-ou-aller">4. Choisir où aller</a></li><li><a href="#5-les-trois-trajets">5. Les trois trajets</a></li><li><a href="#6-les-reglages-du-parcours">6. Les réglages du parcours</a></li><li><a href="#7-les-lieux-utiles">7. Les lieux utiles</a></li><li><a href="#8-le-guidage">8. Le guidage</a></li><li><a href="#9-l-apple-watch">9. L'Apple Watch</a></li><li><a href="#10-egeria-premium">10. Egeria Premium</a></li><li><a href="#11-les-autres-reglages">11. Les autres réglages</a></li><li><a href="#12-questions-frequentes">12. Questions fréquentes</a></li></ol></nav>
+  <section><h2 id="1-pourquoi-egeria">1. Pourquoi Egeria</h2>
+
+<p>L'idée est née à Paris, pendant l'été 2026. En pleine chaleur, je marchais d'un quartier à l'autre en changeant de trottoir à chaque rue pour gagner un peu d'ombre, sans jamais savoir si la rue suivante serait mieux. Les applications de plans savent trouver le chemin le plus court, aucune ne savait trouver le plus frais.</p>
+<p>Egeria fait exactement ça : elle montre où tombe l'ombre des bâtiments et des arbres, à l'heure que vous voulez, puis elle vous guide par les rues les plus ombragées. Et l'hiver, si vous préférez le soleil, elle fait l'inverse.</p>
+<p>Jean-Philippe, créateur d'Egeria</p>
+</section><section><h2 id="2-comment-ca-marche">2. Comment ça marche</h2>
+
+<p><strong>Les ombres sont calculées sur votre iPhone.</strong> Egeria connaît la hauteur de chaque bâtiment (données de l'IGN, l'Institut national de l'information géographique et forestière) et, dans les villes qui publient leur inventaire comme Paris, la taille des arbres. À partir de la position exacte du soleil, jour et heure, elle dessine l'ombre de chacun. Rien n'est préparé à l'avance : tout se calcule à l'instant, pour l'heure que vous choisissez.</p>
+<p><strong>Les cartes arrivent par petits morceaux.</strong> Quand vous regardez un quartier, Egeria télécharge seulement ce quartier, puis le garde sur l'iPhone. Un endroit déjà visité fonctionne ensuite sans réseau. Votre position n'est jamais envoyée.</p>
+<p><strong>Le trajet tient compte des ombres à venir.</strong> Pour une marche de 40 minutes, le soleil a le temps de tourner. Egeria calcule chaque rue avec les ombres telles qu'elles seront au moment où vous y passerez, selon votre vitesse de marche, un peu comme un logiciel de navigation à voile qui anticipe le vent.</p>
+<p><strong>Pendant la marche, Egeria vérifie.</strong> Toutes les deux minutes, elle refait le calcul depuis l'endroit où vous êtes, à l'heure réelle et à votre vitesse réelle. Si vous avez fait une pause, ou si vous marchez plus vite ou plus lentement que prévu, les ombres ne sont plus au même endroit à votre passage. Quand un chemin nettement plus ombragé apparaît, Egeria vous le propose, comme une application de conduite qui propose un autre itinéraire quand un bouchon se forme. Vous acceptez ou non : sans réponse, le trajet ne change pas.</p>
+<p><strong>Si vous quittez le trajet</strong>, Egeria recalcule un nouveau chemin depuis votre position, sans rien vous demander. Elle vous propose une seule fois de faire demi-tour ; si vous continuez tout droit, elle cherche un chemin vers l'avant.</p>
+<p><strong>Egeria suit l'axe des rues.</strong> C'est vous qui choisissez votre trottoir : le calcul regarde les deux côtés et retient le plus ombragé.</p>
+</section><section><h2 id="3-la-carte-et-les-ombres">3. La carte et les ombres</h2>
+
+<div class="bloc un"><figure><img class="tel" src="img/03_carte_1100.jpg" alt="" loading="lazy"><figcaption>Le Marais, 15 juillet, 11 h</figcaption></figure><div class="texte"><p>Les zones grises sont les ombres au sol, les bâtiments sont dessinés par-dessus.</p>
+<p><strong>Changer l'heure</strong> : faites glisser le curseur en bas de l'écran. Il va du lever au coucher du soleil, et la hauteur du soleil s'affiche sous l'heure. Les ombres suivent aussitôt.</p>
+<p><strong>Le jour</strong> est celui d'aujourd'hui, affiché sous le curseur.</p></div></div>
+
+<div class="bloc un"><figure><img class="tel" src="img/03_carte_1730.jpg" alt="" loading="lazy"><figcaption>Le même quartier à 17 h 30</figcaption></figure><div class="texte"><p><strong>À 17 h 30</strong>, le soleil est passé à l'ouest : les ombres ont changé de côté des rues et se sont allongées.</p>
+<p><img class="rond" src="img/b_position.png" alt=""> <strong>Votre position</strong> : ce bouton centre la carte sur vous et la fait suivre vos déplacements.</p>
+<p><strong>Le soir et la nuit</strong>, il n'y a pas d'ombre à calculer : Egeria n'affiche rien quand le soleil est trop bas.</p></div></div>
+
+<div class="bloc deux"><figure><img class="tel" src="img/11_jour_decembre.jpg" alt="" loading="lazy"><img class="tel" src="img/11_jour_decembre_replie.jpg" alt="" loading="lazy"><figcaption>Le 15 décembre, à 11 h</figcaption></figure><div class="texte"><p><strong>Préparer une sortie un autre jour</strong> : choisissez-le dans les Réglages, section Affichage, ligne Journée. Il s'affiche alors en bleu sous le curseur, et le curseur suit les heures de soleil de ce jour-là.</p>
+<p>Le 15 décembre à 11 h, le soleil n'est qu'à 14° de hauteur : les ombres sont très longues, et les trois trajets de l'exemple se confondent, à 98 % d'ombre.</p>
+<p><strong>Pas de guidage un autre jour</strong> : il sert à préparer. Le bouton de guidage laisse alors la place à « Revenir à aujourd'hui ».</p>
+<p>« Revenir à aujourd'hui » ramène au jour même. Au lancement suivant, Egeria revient aussi à aujourd'hui.</p></div></div>
+
+</section><section><h2 id="4-choisir-ou-aller">4. Choisir où aller</h2>
+
+<div class="bloc un"><figure><img class="tel" src="img/04_recherche.jpg" alt="" loading="lazy"><figcaption>La recherche « Place des Vosges »</figcaption></figure><div class="texte"><p><strong>Touchez « Où allez-vous ? »</strong>, en haut de l'écran, et tapez une adresse, un lieu, un monument. <img class="rond" src="img/b_recherche.png" alt=""> Quand des trajets sont affichés, la loupe relance une recherche.</p>
+<p><strong>Ou faites un appui long sur la carte</strong>, puis choisissez « Aller ici » ou « Partir d'ici ».</p>
+<p><strong>Le départ</strong> est votre position, ou le centre de la carte si Egeria n'a pas votre position. Touchez la ligne du haut pour en choisir un autre.</p>
+<p><strong>Une étape</strong> : touchez un lieu sur la carte puis « Point d'étape » pour ajouter un passage obligé, une boulangerie sur le chemin par exemple.</p></div></div>
+
+</section><section><h2 id="5-les-trois-trajets">5. Les trois trajets</h2>
+
+<div class="bloc un"><figure><img class="tel" src="img/05_trajets.jpg" alt="" loading="lazy"><figcaption>De la station Arts et Métiers à la place des Vosges, 11 h</figcaption></figure><div class="texte"><p>Egeria propose toujours trois trajets :</p>
+<ul>
+<li><strong>Le plus court</strong> : la distance la plus courte, sans tenir compte du soleil.</li>
+<li><strong>Équilibré</strong> : accepte un petit détour pour gagner de l'ombre.</li>
+<li><strong>Ombragé max</strong> : cherche l'ombre avant tout, quitte à marcher plus longtemps.</li>
+</ul>
+<p>Pour chacun : durée, distance, part du trajet à l'ombre, montées et descentes, heure d'arrivée. Quand deux trajets sont identiques, ils sont réunis sur une seule ligne ; quand les trois le sont, la ligne s'appelle « Les trois trajets ».</p>
+<p><strong>Dans l'exemple</strong>, Le plus court fait 1,6 km avec 68 % d'ombre ; Équilibré et Ombragé max, identiques ici, passent à 91 % pour une minute de plus.</p>
+<p><strong>Les avertissements</strong> en orange signalent ce que le trajet n'a pas pu éviter : escaliers, pentes fortes, passages étroits.</p></div></div>
+
+<div class="bloc deux"><figure><img class="tel" src="img/05_pres_0.jpg" alt="" loading="lazy"><img class="tel" src="img/05_pres_1.jpg" alt="" loading="lazy"><figcaption>Le plus court, puis Équilibré et Ombragé max</figcaption></figure><div class="texte"><p><strong>Voir les ombres le long du trajet</strong> : abaissez le panneau en le faisant glisser vers le bas. La carte apparaît avec le trajet choisi et les ombres, et le curseur permet de changer l'heure.</p>
+<p>Le plus court (à gauche) suit les grands axes au soleil ; Ombragé max (à droite) passe par les petites rues du Marais, à l'ombre des immeubles.</p>
+<p>Touchez un autre trajet dans le panneau pour l'afficher sur la carte.</p></div></div>
+
+<div class="bloc un"><figure><img class="tel" src="img/05_instructions.jpg" alt="" loading="lazy"><figcaption>Les instructions d'Ombragé max</figcaption></figure><div class="texte"><p><img class="large" src="img/b_instructions.png" alt=""></p>
+<p>La liste des changements de direction, rue par rue, avec pour chacun la distance depuis le départ et la part d'ombre qui suit.</p>
+<p><img class="large" src="img/b_demarrer.png" alt=""></p>
+<p>Lance le guidage sur le trajet choisi (chapitre 8).</p></div></div>
+
+</section><section><h2 id="6-les-reglages-du-parcours">6. Les réglages du parcours</h2>
+
+<div class="bloc un"><figure><img class="tel" src="img/06_reglages.jpg" alt="" loading="lazy"><figcaption>Les réglages, section Parcours</figcaption></figure><div class="texte"><p><img class="rond" src="img/b_reglages.png" alt=""> <strong>Le bouton Réglages</strong>, en haut à droite, ouvre les réglages.</p>
+<p>La section Parcours contient quatre choix qui se cumulent : Soleil, Mobilité réduite, Le moins de dénivelé et Vitesse de marche.</p>
+<p>Un changement recalcule aussitôt les trajets affichés.</p></div></div>
+
+<h3>Soleil</h3>
+<div class="bloc deux"><figure><img class="tel" src="img/05_trajets.jpg" alt="" loading="lazy"><img class="tel" src="img/06_soleil_trajets.jpg" alt="" loading="lazy"><figcaption>Le même trajet, à l'ombre puis au soleil</figcaption></figure><div class="texte"><ul>
+<li><strong>À l'ombre</strong> : les trajets Équilibré et Ombragé max cherchent l'ombre. C'est le réglage de l'été.</li>
+<li><strong>Au soleil</strong> : ils cherchent le soleil, et Ombragé max devient <strong>Ensoleillé max</strong>. Pratique l'hiver.</li>
+</ul>
+<p>Au soleil, le trajet Ensoleillé max de l'exemple fait un grand détour : 3,3 km, mais 90 % au soleil.</p></div></div>
+
+<h3>Mobilité réduite</h3>
+<div class="bloc deux"><figure><img class="tel" src="img/06_mob_aucune_panneau.jpg" alt="" loading="lazy"><img class="tel" src="img/06_mob_aucune_pres.jpg" alt="" loading="lazy"><figcaption>Sans réglage : 0,7 km et 85 m d'escaliers</figcaption></figure><div class="texte"><ul>
+<li><strong>Aucune</strong> : tous les chemins sont possibles.</li>
+<li><strong>Difficultés à marcher</strong> : évite les escaliers et les pentes fortes (6 % ou plus). Un escalier avec rampe reste acceptable.</li>
+<li><strong>Fauteuil ou poussette</strong> : évite aussi les passages de moins de 1,20 m, les pavés, graviers, sable et chemins de terre, et les lieux signalés inaccessibles en fauteuil.</li>
+</ul>
+<p><strong>L'exemple</strong> : de la station Anvers à la place du Tertre, à Montmartre. Sans réglage, le plus court fait 0,7 km par les escaliers.</p></div></div>
+
+<div class="bloc deux"><figure><img class="tel" src="img/06_mob_marche_panneau.jpg" alt="" loading="lazy"><img class="tel" src="img/06_mob_marche_pres.jpg" alt="" loading="lazy"><figcaption>Difficultés à marcher : 1,1 km, sans escalier</figcaption></figure><div class="texte"><p>Avec « Difficultés à marcher », le trajet fait le tour par les rues : 1,1 km, sans un escalier.</p>
+<p>Les avertissements signalent encore une pente forte et des pavés, qu'on ne peut pas éviter pour monter à la place du Tertre.</p>
+<p>Un escalier n'est jamais totalement interdit, sinon certains trajets n'existeraient pas : s'il n'y a pas d'autre chemin, le trajet le signale.</p></div></div>
+
+<h3>Le moins de dénivelé</h3>
+<div class="bloc deux"><figure><img class="tel" src="img/06_deniv2_sans_panneau.jpg" alt="" loading="lazy"><img class="tel" src="img/06_deniv2_sans.jpg" alt="" loading="lazy"><figcaption>Sans le réglage : Équilibré passe par le haut de la butte</figcaption></figure><div class="texte"><p>Préfère un détour à plat à une côte. Pour le calcul, un mètre de montée pèse comme huit mètres de marche à plat, un mètre de descente comme quatre.</p>
+<p>Par exemple, franchir une butte de 10 m de haut pèse comme 120 m de marche : Egeria en fait le tour si le contournement ajoute moins que ça.</p>
+<p><strong>L'exemple</strong> : des Abbesses à Jules Joffrin. Sans le réglage, Équilibré passe par le haut de Montmartre : 1,2 km et 48 m de montée.</p></div></div>
+
+<div class="bloc deux"><figure><img class="tel" src="img/06_deniv2_avec_panneau.jpg" alt="" loading="lazy"><img class="tel" src="img/06_deniv2_avec.jpg" alt="" loading="lazy"><figcaption>Avec le réglage : il contourne la butte</figcaption></figure><div class="texte"><p>Avec le réglage, Équilibré contourne la butte par l'est : 1,6 km, mais 16 m de montée seulement.</p>
+<p>Le plus court, lui, passe toujours par le haut : le contournement ajoute trop de distance.</p></div></div>
+
+<h3>Vitesse de marche</h3>
+<div class="bloc un"><figure><img class="tel" src="img/06_vitesse.jpg" alt="" loading="lazy"><figcaption>La liste des vitesses</figcaption></figure><div class="texte"><p>Elle sert à calculer la durée du trajet et l'heure de passage dans chaque rue, donc les ombres que vous y trouverez.</p>
+<ul>
+<li><strong>1,3 m/s (4,7 km/h), en gras</strong> : la vitesse de référence d'un piéton.</li>
+<li><strong>Votre moyenne, en italique</strong> : calculée sur vos dix derniers guidages. Elle apparaît après quelques marches guidées.</li>
+</ul>
+<p>Pendant le guidage, Egeria mesure votre allure réelle et s'en sert pour les recalculs, quel que soit ce réglage.</p></div></div>
+
+</section><section><h2 id="7-les-lieux-utiles">7. Les lieux utiles</h2>
+
+<div class="bloc un"><figure><img class="tel" src="img/07_points.jpg" alt="" loading="lazy"><figcaption>Le choix des lieux</figcaption></figure><div class="texte"><p><img class="rond" src="img/b_lieux.png" alt=""> <strong>Le bouton des lieux</strong> affiche des lieux sur la carte. Cochez ceux qui vous intéressent :</p>
+<p>toilettes, eau potable, boulangerie, épicerie, supermarché, pharmacie, banc, abri, café et bar, restaurant, musée et galerie, lieu de culte, gare et tram, ascenseur, monument.</p>
+<p>Aucune catégorie n'est cochée au départ. « Tout décocher » les retire d'un coup. Le bouton passe en bleu quand des lieux sont affichés.</p></div></div>
+
+<div class="bloc un"><figure><img class="tel" src="img/07_fiche.jpg" alt="" loading="lazy"><figcaption>La fiche d'un lieu</figcaption></figure><div class="texte"><p><strong>Touchez un lieu</strong> pour voir sa fiche : nom, catégorie, distance, horaires, accès en fauteuil quand il est connu.</p>
+<p>Deux boutons : <strong>Destination finale</strong> pour y aller, <strong>Point d'étape</strong> pour y passer en chemin.</p>
+<p>Les lieux viennent d'OpenStreetMap, la carte collaborative. Certaines informations, comme les horaires ou le caractère payant des toilettes, peuvent manquer ou dater.</p></div></div>
+
+</section><section><h2 id="8-le-guidage">8. Le guidage</h2>
+
+<div class="bloc un"><figure><img class="tel" src="img/08_guidage_4.jpg" alt="" loading="lazy"><figcaption>L'écran de guidage</figcaption></figure><div class="texte"><p><img class="large" src="img/b_demarrer.png" alt=""></p>
+<p>Choisissez un trajet puis touchez ce bouton. Le guidage sur Le plus court est inclus, Équilibré et Ombragé max demandent Egeria Premium. Le guidage se fait le jour même, à l'heure réelle : le trajet est recalculé au départ si besoin.</p>
+<p><strong>En bas</strong>, la prochaine direction en grand et sa distance, puis le temps, la distance et la part d'ombre qui restent, et l'heure d'arrivée. La carte vous suit et tourne avec vous.</p>
+<p><strong>Au milieu de la rue</strong> : Egeria suit l'axe des rues, votre position de guidage est donc au milieu de la chaussée. C'est vous qui choisissez le trottoir, celui à l'ombre de préférence.</p></div></div>
+
+<div class="bloc deux"><figure><img class="tel" src="img/08_guidage_10.jpg" alt="" loading="lazy"><img class="tel" src="img/08_guidage_2.jpg" alt="" loading="lazy"><figcaption>Une annonce, puis un recalcul</figcaption></figure><div class="texte"><p><strong>Les annonces</strong> : chaque direction est annoncée à 100 m puis au moment de tourner, dans un bandeau en haut de l'écran. Avec le guidage vocal, elles sont lues à voix haute.</p>
+<p><strong>Si vous sortez du trajet</strong> : Egeria le détecte en quelques secondes et calcule un nouveau chemin depuis votre position (« Nouvel itinéraire »). Elle propose une seule fois le demi-tour ; si vous continuez, elle cherche un chemin vers l'avant.</p>
+<p><strong>Les ombres pendant la marche</strong> : tant que la carte vous suit, les ombres ne sont pas dessinées, pour une carte plus lisible et moins de batterie. Touchez la carte pour les faire réapparaître.</p></div></div>
+
+<div class="bloc un"><figure><img class="tel" src="img/08_proposition_5.jpg" alt="" loading="lazy"><figcaption>Un chemin plus à l'ombre est proposé</figcaption></figure><div class="texte"><p><strong>Un chemin plus à l'ombre</strong> : quand Egeria en trouve un, elle l'annonce et affiche le gain d'ombre et la distance en plus, avec deux boutons :</p>
+<p><img class="large" src="img/b_proposition.png" alt=""></p>
+<p>Sans réponse, le trajet ne change pas.</p></div></div>
+
+<p><strong>L'écran reste allumé</strong> tant qu'Egeria est devant vous. Si vous verrouillez l'iPhone, la prochaine direction reste affichée sur l'écran verrouillé.</p>
+<p><strong>L'arrivée</strong> est annoncée à moins de 15 m. Le guidage s'arrête seul une minute après, ou dès que vous vous éloignez de 50 m.</p>
+<p><img class="large" src="img/b_arreter.png" alt=""></p>
+<p>Arrête le guidage à tout moment.</p>
+</section><section><h2 id="9-l-apple-watch">9. L'Apple Watch</h2>
+
+<div class="bloc deux"><figure><img class="montre" src="img/09_montre_4.jpg" alt="" loading="lazy"><img class="montre" src="img/09_montre_instructions.jpg" alt="" loading="lazy"><figcaption>La carte, puis les instructions</figcaption></figure><div class="texte"><p>Egeria fonctionne uniquement avec l'Apple Watch. Elle ne calcule rien elle-même : elle suit le guidage de l'iPhone, qui doit rester avec vous.</p>
+<p><strong>Rien à lancer</strong> : dès que le guidage démarre sur l'iPhone, il s'affiche automatiquement sur la montre.</p>
+<p><strong>Deux pages</strong>, qu'on fait défiler avec la couronne :</p>
+<ul>
+<li><strong>la carte</strong> : votre trajet en bleu, votre position et la prochaine direction. Elle tourne avec vous. Les ombres n'y sont pas dessinées.</li>
+<li><strong>les instructions</strong> : la prochaine direction en grand, sa distance, puis le temps, la distance et la part d'ombre qui restent.</li>
+</ul>
+<p><strong>La montre tape au poignet</strong>, différemment selon le cas : à chaque direction annoncée, quand vous sortez du trajet, à l'arrivée.</p></div></div>
+
+</section><section><h2 id="10-egeria-premium">10. Egeria Premium</h2>
+
+<div class="bloc un"><figure><img class="tel" src="img/10_premium.jpg" alt="" loading="lazy"><figcaption>L'écran Egeria Premium</figcaption></figure><div class="texte"><p><strong>Gratuit pour tout le monde</strong> : la carte, les ombres, les trois trajets, les lieux utiles, et le guidage sur Le plus court.</p>
+<p><strong>Egeria Premium</strong> ouvre le guidage sur Équilibré et Ombragé max. Un seul achat, pour toujours, valable sur tous vos appareils, sans abonnement ni compte à créer. Le prix s'affiche sur le bouton d'achat.</p>
+<p><strong>Changé d'iPhone ?</strong> Réglages, section Version, « Restaurer mes achats ».</p></div></div>
+
+</section><section><h2 id="11-les-autres-reglages">11. Les autres réglages</h2>
+
+<ul>
+<li><strong>Ombre en minutes</strong> : affiche le temps passé à l'ombre plutôt qu'un pourcentage.</li>
+<li><strong>Journée</strong> : choisir un autre jour pour préparer une sortie, et « Revenir à aujourd'hui ».</li>
+<li><strong>Heure</strong> : rappelle l'heure affichée sur la carte.</li>
+<li><strong>Départ</strong> : rappelle le point de départ choisi, et permet de revenir au centre de la carte.</li>
+<li><strong>Guidage vocal</strong> : lit chaque direction à voix haute, une fois à distance et une fois au moment de tourner. La musique baisse pendant l'annonce.</li>
+<li><strong>Cache sur l'appareil</strong> : la place prise par les cartes déjà téléchargées, et un bouton pour la libérer. Elles reviendront au prochain passage.</li>
+<li><strong>À propos</strong> : les zones couvertes et l'origine des données.</li>
+</ul>
+</section><section><h2 id="12-questions-frequentes">12. Questions fréquentes</h2>
+
+<p><strong>Où fonctionne Egeria ?</strong> Dans les grandes villes françaises et leur agglomération, la liste complète est dans Réglages, À propos. Ailleurs, la carte s'affiche sans ombres ni itinéraires. D'autres villes arrivent régulièrement.</p>
+<p><strong>Faut-il du réseau ?</strong> Oui pour découvrir un quartier, non pour y revenir.</p>
+<p><strong>Egeria consomme-t-elle beaucoup de batterie ?</strong> Pendant le guidage, l'écran reste allumé. Les ombres ne sont pas redessinées pendant que la carte vous suit, pour économiser.</p>
+<p><strong>Pourquoi un bâtiment n'a-t-il pas d'ombre ?</strong> Sa hauteur manque parfois dans les données publiques.</p>
+<p><strong>Et les arbres ?</strong> Ils sont pris en compte là où la ville publie leur inventaire, à Paris par exemple. Ils sont dessinés avec leurs feuilles toute l'année : en hiver, leur ombre est plus grande que la réalité.</p>
+<p><strong>Pourquoi pas de mode nuit ?</strong> Sans soleil, il n'y a pas d'ombre à chercher.</p>
+<p><strong>Egeria connaît-elle ma position ?</strong> Seul votre iPhone la connaît. Rien n'est envoyé.</p>
+<p><strong>Contact</strong> : contact.egeria.app@gmail.com</p></section>
+  <footer>Egeria · notice du 28 septembre 2026 · <a href="../confidentialite.html">Politique de confidentialité</a></footer>
+</main>
+<a class="haut" href="#haut">↑ Sommaire</a>
+</body>
+</html>
